@@ -1,11 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miverr</title>
+    <link rel="shortcut icon" href="./images/fav.webp" type="image/x-icon">
+
+    <!-- custom google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- custom roboto google font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+
+
+
+    <!-- daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind script file -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+    <!-- font awesome cdn -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- some custom style -->
+
+    <style>
+        .font-dosis {
+            font-family: "Dosis", serif;
+        }
+
+        .font-pop {
+            font-family: "Poppins", serif;
+        }
+
+        .navcommon{
+            font-family: "Poppins", serif;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 36px;
+            margin-right: 20px;
+        }
+
+        .bg-nav{
+            background-color: rgb(255, 255, 255);
+            border: 1px solid #111;
+        }
+        
+    </style>
 </head>
-<body>
-    
+
+<body class="font-pop">
+    <!-- header  -->
+    <header class="w-full">
+        <nav class="w-[90%] mx-auto">
+            <div class="navbar">
+                <!-- logo -->
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                    </div>
+                    <img src="./images/header_logo.png" alt="Miverr Logo">
+                </div>
+                <!-- main menu -->
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="navcommon">
+                            <details>
+                                <summary>Miverr Pro</summary>
+                                <ul class="p-7 w-[350px] bg-slate-100 rounded-lg">
+                                    <li class="w-[350px]  p-7 rounded-xl mb-4 bg-nav">
+                                        <div class="flex gap-4">
+                                            <div class="w-[30px] h-[30px]"><img class="w-full" src="./images/looking.png" alt="looking image"></div>
+                                            <div>
+                                                <a class="text-base font-pop font-normal text-black " href="#">I am Looking To Hire</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="w-[350px] bg-nav p-7 rounded-xl">
+                                        <div>
+                                            <div class="w-[30px] h-[30px]"><img class="w-full" src="./images/serve.png" alt="serve image"></div>
+                                            <div>
+                                                <a href="#" class="text-base font-pop font-normal text-black " >I want to offer pro services</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li class="navcommon">
+                            <details>
+                                <summary>Explore</summary>
+                                <ul class="p-2">
+                                    <li class="text-base font-pop font-medium bg-nav mb-3 rounded-xl"><a href="#">Answers</a></li>
+                                    <li class="text-base font-pop font-medium bg-nav mb-3 rounded-xl"><a href="#">Community</a></li>
+                                    <li class="text-base font-pop font-medium bg-nav mb-3 rounded-xl"><a href="#">Guides</a></li>
+                                    <li class="text-base font-pop font-medium bg-nav mb-3 rounded-xl"><a href="#">Podcast</a></li>
+                                    <li class="text-base font-pop font-medium bg-nav mb-3 rounded-xl"><a href="#">Learn</a></li>
+                                    <li class="text-base font-pop font-medium bg-nav mb-3 rounded-xl"><a href="#">Blog</a></li>
+                                    <li class="text-base font-pop font-medium bg-nav mb-3 rounded-xl"><a href="#">Logo Maker</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li class="navcommon"><div><i class="fa-solid fa-globe"></i> <span>English</span></div></li>
+                        <li class="navcommon"><a href="#">Become a Seller</a></li>
+                        <li class="navcommon"><a href="#">Sign In</a></li>
+                    </ul>
+                </div>
+                <!-- button -->
+                <div class="">
+                    <a class="btn text-xl font-semibold font-pop lg:bg-[#00800d] lg:border-none lg:outline-none lg:px-7 lg:py-2 lg:text-white lg:hover:bg-green-900">Join</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+
 </body>
+
 </html>
