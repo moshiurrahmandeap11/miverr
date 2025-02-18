@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miverr - join with trust</title>
+    <!-- favicon add -->
+    <link
+      rel="shortcut icon"
+      href="./assests/images/icons8-mario-48.png"
+      type="image/x-icon"
+    />
+    <!-- tailwind cdn install  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- cdn script  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- daisy ui cdn install -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google font poppin install  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .font-poppins {
+        font-family: "Poppins", serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="w-full font-poppins font-normal">
+      <nav class="w-[90%] mx-auto flex justify-between items-center lg:mt-4">
+        <div class="md:hidden lg:hidden">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </div>
+        <h2 class="font-extrabold text-3xl text-black">
+          <span class="text-green-800">M</span>iverr<span class="text-green-800"
+            >.</span
+          >
+        </h2>
+        <div>
+          <button
+            class="btn bg-green-600 hover:bg-green-800 px-7 text-xl font-semibold md:bg-slate-200 md:border md:border-green-800 md:hover:text-white lg:bg-slate-200 lg:border lg:border-green-800 lg:hover:text-white outline-none"
+          >
+            Join
+          </button>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
