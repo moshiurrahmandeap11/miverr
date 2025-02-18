@@ -50,7 +50,7 @@
     />
 
     <style>
-      .font-poppins {
+      .font-pop {
         font-family: "Poppins", serif;
       }
     </style>
@@ -58,8 +58,8 @@
 
   <body>
     <!-- header -->
-    <header class="w-full font-poppins font-normal">
-      <nav class="w-[90%] mx-auto flex justify-between items-center lg:mt-4">
+    <header class="w-full font-pop font-normal shadow-lg lg:py-4 py-2">
+      <nav class="w-[90%] mx-auto flex justify-between items-center">
         <div class="md:hidden lg:hidden">
           <i class="fa-solid fa-bars text-2xl"></i>
         </div>
@@ -68,6 +68,157 @@
             >.</span
           >
         </h2>
+        <div
+          class="hidden lg:flex lg:justify-around lg:items-center lg:gap-6 lg:ml-[390px] lg:cursor-pointer"
+        >
+          <!-- first dropdown -->
+          <div class="dropdown relative">
+            <div
+              tabindex="0"
+              role="button"
+              class="m-1 lg:hover:text-green-600 font-medium"
+            >
+              Miverr Pro <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu bg-white absolute top-full left-0 z-[1000] w-[400px] p-4 shadow-lg"
+            >
+              <li>
+                <div class="p-4 bg-white shadow-xl space-y-10">
+                  <div>
+                    <div
+                      class="flex justify-start items-center gap-5 w-full border border-black p-3 mb-4 rounded-lg"
+                    >
+                      <div class="w-10">
+                        <img
+                          class="w-full"
+                          src="./assests/images/eyes.png"
+                          alt="looking for"
+                        />
+                      </div>
+                      <div>
+                        <h2 class="font-bold text-base text-black">
+                          I'm looking to hire
+                        </h2>
+                        <p class="font-normal text-sm text-black">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="flex justify-start items-center gap-5 w-full border border-black p-3 rounded-lg"
+                    >
+                      <div class="w-10 h-auto">
+                        <img
+                          class="w-full"
+                          src="./assests/images/eyes.png"
+                          alt="looking for"
+                        />
+                      </div>
+                      <div>
+                        <h2 class="font-bold text-base text-black">
+                          I want to offer Pro Services
+                        </h2>
+                        <p class="font-normal text-sm text-black">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- second dropdown -->
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="m-1 lg:hover:text-green-600 font-medium"
+            >
+              Explore <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu bg-base-100 rounded-box z-[1] w-[300px] p-2 shadow"
+            >
+              <!-- first -->
+              <li>
+                <div class="flex flex-col justify-start items-start">
+                  <h2 class="font-bold text-base text-black">Answers</h2>
+                  <p class="text-xs w-[300px]">
+                    powered by ai , support by freelancers
+                  </p>
+                </div>
+              </li>
+              <!-- second -->
+              <li>
+                <div class="flex flex-col justify-start items-start">
+                  <h2 class="font-bold text-base text-black">Community</h2>
+                  <p class="text-xs w-[300px]">
+                    powered by ai , support by freelancers
+                  </p>
+                </div>
+              </li>
+              <!-- third -->
+              <li>
+                <div class="flex flex-col justify-start items-start">
+                  <h2 class="font-bold text-base text-black">Guides</h2>
+                  <p class="text-xs w-[300px]">
+                    powered by ai , support by freelancers
+                  </p>
+                </div>
+              </li>
+              <!-- fourth -->
+              <li>
+                <div class="flex flex-col justify-start items-start">
+                  <h2 class="font-bold text-base text-black">Podcast</h2>
+                  <p class="text-xs w-[300px]">
+                    powered by ai , support by freelancers
+                  </p>
+                </div>
+              </li>
+              <!-- fifth -->
+              <li>
+                <div class="flex flex-col justify-start items-start">
+                  <h2 class="font-bold text-base text-black">Learn</h2>
+                  <p class="text-xs w-[300px]">
+                    powered by ai , support by freelancers
+                  </p>
+                </div>
+              </li>
+              <!-- sixth -->
+              <li>
+                <div class="flex flex-col justify-start items-start">
+                  <h2 class="font-bold text-base text-black">Blog</h2>
+                  <p class="text-xs w-[300px]">
+                    powered by ai , support by freelancers
+                  </p>
+                </div>
+              </li>
+              <!-- seventh -->
+              <li>
+                <div class="flex flex-col justify-start items-start">
+                  <h2 class="font-bold text-base text-black">Logo Maker</h2>
+                  <p class="text-xs w-[300px]">
+                    powered by ai , support by freelancers
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <h2 class="lg:hover:text-green-600 font-medium">
+            <i class="fa-solid fa-globe"></i> English
+          </h2>
+          <h2 class="lg:hover:text-green-600 font-medium">Become a Seller</h2>
+          <h2 class="lg:hover:text-green-600 font-poppins font-medium">
+            Sign In
+          </h2>
+        </div>
+
         <div>
           <button
             class="btn bg-green-600 hover:bg-green-800 px-7 text-xl font-semibold md:bg-slate-200 md:border md:border-green-800 md:hover:text-white lg:bg-slate-200 lg:border lg:border-green-800 lg:hover:text-white outline-none"
